@@ -23,21 +23,7 @@ module.exports = function(config, message, edited, deleted)
    // Ignore messages by bots
    // ------------------------
 
-   if (bot2bot.getBot2botVar() === "off")
-   {
-      if (message.author.bot)
-      {
-         return;
-      }
-   }
 
-   if (bot2bot.getBot2botVar() === "on")
-   {
-      if (message.author.discriminator === "0000")
-      {
-         return;
-      }
-   }
 
    // -----------------------------------------
    // Embed member permissions in message data
